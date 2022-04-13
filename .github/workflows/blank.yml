@@ -36,8 +36,8 @@ jobs:
             lsblk 
            echo lsusb  
           echo Add other actions to build,
-          'lspci -nnk | grep net -A2'
+          lspci -nnk \| grep net -A2
           echo test, and deploy your project.
             lspci -v \| grep -A7 -i "audio"
-              'lspci -nnk | grep VGA -A1'        
+              lspci -nnk \| grep VGA -A1        
           
